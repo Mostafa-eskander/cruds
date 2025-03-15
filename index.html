@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p2-CRUDS</title>
+    <link rel="stylesheet" href="p2 cruds.css">
+</head>
+<body>
+    <div class="crud-container">
+        <div class="head">
+            <h2>AFROTO</h2>
+            <p>Warehouse management</p>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Title"  id="title">
+            <div class="price">
+                <input type="number" onkeyup="getGain()" placeholder="price" id="price">
+                <input type="number" onkeyup="getGain()" placeholder="selling" id="selling">
+                <small id="total"></small>
+            </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category"  id="category">
+            <button id="submit">Create</button>
+        </div>
+        <div class="outputs">
+            <div class="searchBlock">
+                <input onkeyup="searchData(this.value)" type="text" placeholder="search" id="search">
+            </div>
+            <div class="btnSearch">
+                <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+                <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+            </div>
+            <div id="btndelete"></div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>Selling</th>
+                    <th>gain</th>
+                    <th>count</th>
+                    <th>date</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>detete</th>
+                </tr>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="p2 cruds.js"></script>
+</body>
+</html>
