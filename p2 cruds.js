@@ -34,7 +34,7 @@ function getGain() {
 //create product
 let dataPro = [];
 
-if(localStorage.product !== null) {
+if(localStorage.product != null) {
     dataPro = JSON.parse(localStorage.product);
 }else {
     dataPro = [];
@@ -116,7 +116,7 @@ function deleteOneValue(value) {
 //delete All
 function deleteAll() {
     dataPro.splice(0);
-    localStorage.clear;
+    localStorage.clear();
     showData();
 };
 
