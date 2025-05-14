@@ -77,3 +77,11 @@ table th {
 th,td {
     padding: 5px;
 }
+@media (max-width: 1050px){
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
